@@ -1,0 +1,40 @@
+<!-- Each player presses own button
+Higher card gets cards added to their array
+array of cards dealt at the start
+Matching cards mean WAR  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>WAR!!</title>
+</head>
+<body>
+    <button style="margin-left: 30vw;" onclick="drawCards()">!Draw Cards!</button>
+    <div class="playersControls">
+        <div id="p1">
+            <h1>BB</h1>
+            <h2>Card Count:</h2>
+            <div id="scoreP1"></div>
+            <button id="p1Flip" onclick="p1flip()">Flip card</button>
+            <div id="p1Card"></div>
+        </div>
+        <div id="p2">
+            <h1>Ant</h1>
+            <h2>Card Count:</h2>
+            <div id="scoreP2"></div>
+            <button id="p2Flip" onclick="p2flip()">Flip card</button>
+            <div id="p2Card"></div>
+        </div>
+    </div>
+
+    <div id='results'></div>
+</body>
+</html>
